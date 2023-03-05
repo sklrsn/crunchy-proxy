@@ -41,7 +41,7 @@ resolve:
 
 build:
 	@echo "Building project..."
-	@go build -o $(BUILD_DIR)/$(CRUNCHY_PROXY)
+	@GOOS=linux GOARCH=amd64 go build -o $(BUILD_DIR)/$(CRUNCHY_PROXY)
 
 install:
 	@go install
