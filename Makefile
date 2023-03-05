@@ -41,7 +41,7 @@ resolve:
 
 build:
 	@echo "Building project..."
-	@go build -i -o $(BUILD_DIR)/$(CRUNCHY_PROXY)
+	@go build -o $(BUILD_DIR)/$(CRUNCHY_PROXY)
 
 install:
 	@go install
